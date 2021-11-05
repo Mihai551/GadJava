@@ -2,27 +2,21 @@ package lab1.ch2.stage1;
 
 public class Compute {
 
-    public String ifContains (int x) {
+    public String ifContains (Integer x) {
 
-        int i = x;
-        String string = new String("");
+        String theNumber = x.toString();
+        theNumber = theNumber.replaceAll("3","Foo");
+        theNumber = theNumber.replaceAll("5","Bar");
+        theNumber = theNumber.replaceAll("7","Qiz");
+        theNumber = theNumber.replaceAll("0","");
+        theNumber = theNumber.replaceAll("1","");
+        theNumber = theNumber.replaceAll("2","");
+        theNumber = theNumber.replaceAll("4","");
+        theNumber = theNumber.replaceAll("6","");
+        theNumber = theNumber.replaceAll("8","");
+        theNumber = theNumber.replaceAll("9","");
 
-        while (i > 0) {
-            if (i%10==3) {
-                string += "Foo";
-            }
-            if (i%10==5) {
-                string += "Bar";
-            }
-            if (i%10==7) {
-                string += "Qix";
-            }
-
-            i/=10;
-
-        }
-
-        return string;
+        return theNumber;
 
     }
 

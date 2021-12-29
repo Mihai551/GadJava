@@ -24,7 +24,7 @@ public class Main {
         //print the note
         System.out.println(note.getState());
 
-        //restore the note (close the note editor without save changes and then open it again)
+        //restore the note (close the note editor without save the changes and then open it again)
         note.restore(caretaker.getMemento());
 
         //print the note
